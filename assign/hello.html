@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            @media screen and (max-width: 480px){
+                #parent div{
+                    display: flex;
+                    flex-direction:column;
+                }   
+            }
+            #parent{
+                background-color: black;
+                display:flex;
+                height: 50px;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+            #parent div{
+                color: white;
+                font-size: larger;
+            }
+            #nav{
+                display: flex;
+                justify-content: space-around;
+                width: 350px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+           <div>
+            <a>Home</a>
+           </div>
+           <div id="nav">
+            <a>about</a>
+            <a>contact us</a>
+            <a>feedback</a>
+           </div>
+           <div>
+            <button>login</button>
+           </div>
+        </div>
+    </body>
+</html>
