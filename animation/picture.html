@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            body{
+                background:linear-gradient(lightblue,white);
+            }
+            /* #one{
+                background-color: forestgreen;
+                height: 80px;
+                width: auto;
+                position: relative;
+                top: 580px;
+            } */
+            h1{
+               color: deeppink;
+            }
+            
+            #two{
+                background: linear-gradient(red,gold);
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                margin-left: 1300px;
+                position: relative;
+                bottom: 20px;
+                animation-name: sun;
+                animation-duration: 3s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                
+            }
+            .three{
+                height: 100px;
+                width:80px;
+                background-color: blue;
+                border-radius: 50%;
+                border: 2px solid black;
+                animation-name: balloon;
+                animation-duration: 3s;
+                /* animation-timing-function: ease-in-out; */
+                animation-iteration-count: infinite;
+                /* animation-direction: alternate-reverse; */
+            }
+            .three::after{
+                content:"";
+                position: absolute;
+                width: 2px;
+                height: 40px;
+                background:black;
+                left:50%;
+                top:100%;
+            }
+            #b1{
+                background-color: blue;
+                position: relative;
+                top: 400px;
+                left:50px;
+            }
+            #b2{
+                background-color: red;
+                position: relative;
+                left: 300px;
+                top: 400px;
+            }
+            #b3{
+                background-color: blueviolet;
+                position: relative;
+                left: 600px;
+                /* top:400px; */
+            }
+            #b4{
+                background-color: hotpink;
+                position: relative;
+                left: 900px;
+                /* top:400px; */
+            }
+            @keyframes balloon{
+                0%{
+                    transform: translateY(0px);
+                }
+                100%{
+                    transform: translateY(-750px);
+                }
+              
+            }
+            @keyframes sun{
+                0%{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🎉 WELLCOME TO BALLON FESTIWAL 🎈</h1>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="b1"  class="three"></div>
+        <div id="b2" class="three"></div>
+        <div id="b3" class="three"></div>
+        <div id="b4" class="three"></div>
+    </body>
+</html>
